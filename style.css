@@ -190,10 +190,12 @@ nav img {
     font-size: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: center;
 }
 
 .blogcardcontent p {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .blogcardcontent a {
@@ -202,15 +204,18 @@ nav img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
+    display: flex;
+    align-items: baseline;
 }
 
 .socialicons {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 90px;
 }
 
 .socialicon i{
