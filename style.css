@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+h1, h2, h3 {
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+.custom-color {
+    background-color: darksalmon;
+}
+
+.custom-weight {
+    font-weight: 700;
+}
+
+.transparent-button {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.first-section {
+    height: 50%;    
+    background-image: url("./restaurant.jpg");
+    background-size: contain;
+    display: grid;
+    align-content: space-between;
+    align-items: end;
+    justify-content: start;
+}
+
+.first-section .title {
+    width: 100vw;
+    text-align: center;
+    color: white;
+}
+
+.first-section .title i {
+    margin: .5em 0 .3em;
+    color: darksalmon;
+}
+
+.first-section .title h1 {
+    margin: 0;
+    font-size: 250%;
+}
+
+.presentation {
+    background-color: white;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+    border-radius: 1em;  
+    margin-right: 1em;
+    padding-top: 0; 
+}
+
+.presentation button {
+    background-color: darksalmon;
+    padding: 1em;
+    width: 35%;
+    border-radius: 2em;
+    border-style: hidden;
+    font-weight: 700;
+}
+
+.opening-hour {
+    position: absolute;
+    width: 60%;
+    padding: 0 0 1em 2em;
+    color: white;
+}
+
+.opening-hour h1 {
+    color: darksalmon;
+    letter-spacing: .1em;
+}
+
+.opening-hour p {
+    letter-spacing: .1em;
+}
+
+.opening-hour button {
+    background-color: inherit;
+    padding: 1em;
+    width: 35%;
+    border-radius: 2em;
+    border-color: white;
+    border-style: dotted;
+    font-weight: 700;
+    color: white;
+}
+
+/*  ---------------------------------------------------------------- */
+
+.second-section{
+    height: 50%;   
+    background-color: #E9EDF1;
+    text-align: center;
+}
+
+.second-section h2 {
+    margin: 0;
+    padding: 1em;
+    letter-spacing: .1em;
+}
+
+.second-section p {
+    color: darksalmon;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+
+.second-section footer {
+    background-color: #E9EDF1;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section footer p {
+    margin: 0;    
+    color: black;
+}
+
+ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 0;
+    text-align: center;
+    margin-right: 1em;
+}
+
+li {
+    background-color: darksalmon;
+    border-radius: 50%;
+    padding: .3em;    
+    margin-right: .3em;
+}
+
+
+.second-section .dishes{
+    background-color: #E9EDF1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+}
+
+.card p {
+    color: black;
+    line-height: 1.5;
+}
+
+.restaurant-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9EDF1;
+}
+
+.restaurant-bar p {
+    color: black;
+}
+
+.custom-width {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1150px) {
+    .presentation p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .second-section .dishes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation h3 {
+        font-size: larger;
+    }
+
+    .first-section button {
+        font-size: small;
+    }
+
+    .second-section footer {
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .food-image img {        
+        position: relative;
+        margin-left: -.7em;
+    }
+}
