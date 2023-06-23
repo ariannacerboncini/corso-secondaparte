@@ -208,6 +208,7 @@ nav img {
     align-items: baseline;
 }
 
+
 .socialicons {
     list-style: none;
     display: flex;
@@ -234,6 +235,36 @@ nav img {
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+form {
+    padding: 20px;
+    border: solid 2px #dc4ce4;
+    width: 60%;
+}
+
+form h4 {
+    background: -webkit-linear-gradient(left, #964ce4, #dc4ce4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+}
+
+form input, form textarea {
+    padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;  
+    resize: vertical;
+}
+
+#send {
+    background: -webkit-linear-gradient(left, #964ce4, #dc4ce4);
+    border-style: none;
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 footer {
