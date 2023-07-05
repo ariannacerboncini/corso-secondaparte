@@ -238,9 +238,13 @@ nav img {
 }
 
 form {
+    margin-bottom: 50px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    line-height: 2;
     padding: 20px;
-    border: solid 2px #dc4ce4;
-    width: 60%;
 }
 
 form h4 {
@@ -253,9 +257,18 @@ form h4 {
 
 form input, form textarea {
     padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;  
-    resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    resize: none; 
+    width: 100%;
+}
+
+.forminput {
+    width: 60%;
+}
+
+form label {
+    text-indent: 5px;
 }
 
 #send {
@@ -263,8 +276,9 @@ form input, form textarea {
     border-style: none;
     color: white;
     font-family: 'Geologica', sans-serif;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
+    margin-top: 5px;
 }
 
 footer {
@@ -345,6 +359,16 @@ footer {
 
     .descriptiongallery {        
         margin-bottom: 50px;
+    }
+
+    .socialicons {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 90px;
     }
 }
 

@@ -115,7 +115,7 @@
                     <p>
                         Testo placeholder
                     </p>
-                    <a href="#">Leggi ora</a>
+                    <a href="#blog">Leggi ora</a>
                 </div>
             </div>
             <div class="blogcard">
@@ -125,7 +125,7 @@
                     <p>
                         Testo placeholder
                     </p>
-                    <a href="#">Leggi ora</a>
+                    <a href="#blog">Leggi ora</a>
                 </div>
             </div>
             <div class="blogcard">
@@ -135,7 +135,7 @@
                     <p>
                         Testo placeholder
                     </p>
-                    <a href="#">Leggi ora</a>
+                    <a href="#blog">Leggi ora</a>
                 </div>
             </div>
         </div>        
@@ -152,12 +152,14 @@
             <li class="socialicon"><a href="https://it-it.facebook.com/abby.buglio" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i>Facebook</a></li>
         </ul>
         <form action="/submit" method="post">
-            <h4>Nome:</h4>
+            <div class="forminput">
+            <label for="name"><h4>Nome:</h4></label>
             <input type="text" id="name">
-            <h4>Email:</h4>
-            <input type="email" id="name">
-            <h4>Messaggio:</h4>
-            <textarea name="message" id="message"></textarea>
+            <label for="email"><h4>Email:</h4></label>
+            <input type="email" id="email">
+            <label for="message"><h4>Messaggio:</h4></label>
+            <textarea name="message" id="message" rows="8"></textarea>
+            </div>
             <button type="submit" id="send">Invia</button>
         </form>
 </main>
